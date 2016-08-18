@@ -60,6 +60,18 @@ Select `Doghouse Carousel` when creating a new instance widget and your current 
 
 Note: currently you can't choose the group you want to display, only the `default` group can be used as a widget or instance widget. (PR anyone?)
 
+### Getting products from category as carousel items
+
+```
+<block type="dhcarousel/products" template="doghouse/carousel/products.phtml"
+       name="product.slideshow">
+    <action method="setCategoryId">
+        <id>3</id>
+    </action>
+</block>
+```
+
+
 ### Extending it
 
 There are a couple events you can listen to, to add additional form fields to the carousel item. You can even save additional images and files by listening to the controller action event:
